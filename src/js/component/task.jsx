@@ -5,7 +5,7 @@ function Task(props) {
 	return (
 		<div>
 			<p>
-				{props.task}
+				{props.task.label}
 				<button
 					type="button"
 					className="btn btn-outline-danger btn-sm"
@@ -17,7 +17,7 @@ function Task(props) {
 	);
 }
 Task.propTypes = {
-	task: PropTypes.string,
+	task: PropTypes.object,
 	id: PropTypes.number,
 	deleteTask: PropTypes.func
 };
